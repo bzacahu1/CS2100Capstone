@@ -1,0 +1,212 @@
+/*Sets the font type for the web page and content covers the entire screen*/
+body { font-family: Arial, Tahoma, Verdana, sans-serif;
+       margin: 0;
+       padding: 0;
+}
+
+/*h1 thats acts as the header with a light brown and translucent background color*/
+h1 { height: 4em;
+     padding-top: 1.7em;
+     background-color: rgba(255, 223, 198, 0.75);
+     text-align: center;
+}
+
+/*positions the nav at the top of the page with a fixed position to scroll down with the page. Has a brown
+background color that is translucent for better visibility.*/
+nav { position: fixed;
+       top: 0;
+       left: 0;
+       height: 3.5em;
+       background-color: rgba(210, 157, 115, 0.67);
+       font-size: large;
+       font-weight: bold;
+       width: 100%;
+}
+
+/*removes the bullet points from the links list and center the links.*/
+nav ul {list-style-type: none;
+        text-align: center;
+}
+
+/*Formats the links horizontally with enough space between them.*/
+nav li { display: inline;
+         padding-left: 3em;
+         padding-right: 3em;
+}
+
+/*Removes the underline from the links*/
+nav a { text-decoration: none;
+}
+
+/*sets the background image for the Homepage. It is fixed for effect and covers the entire
+homepage section with no repeats.*/
+.hero { background-attachment: fixed;
+        background-image: url(images/homehero.jpg);
+        min-height: 90vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/*sets the background image for the Tutorial page. It is fixed for effect and covers the entire
+tutorial section with no repeats.*/
+#tutorialhero { background-attachment: fixed;
+                background-image: url(images/tutorialhero.jpg);
+                min-height: 90vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+}
+
+/*sets the background image for the About Me page. It is fixed for effect and covers the entire
+About Me section with no repeats.*/
+#abouthero { background-attachment: fixed;
+             background-image: url(images/abouthero.jpg);
+             min-height: 90vh;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+
+/*sets the background image for the Contact page. It is fixed for effect and covers the entire
+Contact section with no repeats.*/
+#contacthero { background-attachment: fixed;
+               background-image: url(images/contacthero.jpg);
+               min-height: 90vh;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+}
+
+/*centers the text in the footer with style set to italics. Also sets the background to a brown color.*/
+footer { text-align: center;
+         font-style: italic;
+         background-color: rgba(210, 157, 115, 0.67);
+}
+
+/*Centers all the text in every "page". Also assings top padding so when the nav links are clicked the intended
+page to navigate to is displayed without the nav bar covering the top section of the content of the section*/
+#home, #tutorial, #about, #contact { text-align: center;
+                                     padding-top: 5em;
+}
+
+/*removes the bullet points from the unordered list and assigns bottom padding for space between content.*/
+ul { list-style-type: none;
+     padding: 0;
+     margin-bottom: 2em;
+}
+
+/*Increases the size of text for the list elements.*/
+li { font-size: 130%;
+}
+
+/*Icrease font size for the steps text and sets the text to a brown color.*/
+dt { font-size: 150%;
+     font-weight: bold;
+     padding-bottom: 0.5em;
+     color: #b97a3a;
+}
+
+/*removes the indentation of description to act as a list. Increases the size of the text as well.*/
+dd { margin: 0;
+     padding-bottom: 0.75em;
+     font-size: 150%;
+}
+
+/*positions the paragraph text in the homepage right below the h1 text. Also increases the text size.*/ 
+#home p { margin-top: -4em;
+          font-size: 150%;
+}
+
+/*h2 header text is larger and set with an oblique text style.*/
+h2 { font-size: 200%;
+     font-style: oblique;
+}
+
+/*h3 headers are positioned right below the h2 headers with the same style.*/
+h3 { font-size: 120%;
+     font-style: oblique;
+     margin-top: -1.2em;
+}
+
+/*sets h4 header to a larger text size and brown color.*/
+h4 { font-size: 170%;
+     margin-bottom: 0;
+     color: #b97a3a;
+}
+
+/*paragraph texts have larger text with larger bottom padding for symmetry within the web page
+and left and right margins so they appear more centered.*/
+p { font-size: 150%;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-bottom: 1em;
+}
+
+/*sets the colors of the links to black for both visited and unvisited.*/
+nav a:link, nav a:visited { color: black;
+}
+
+/*changes the color of the links to a cream color when hovering the mouse over them.*/
+nav a:hover { color: rgba(255, 223, 198); 
+}
+
+/*Sets the caption for the table with a brown color, extra bottom spacing, and larger bold text*/
+table caption { font-size: 1.6em;
+                margin-bottom: 0.7em;
+                font-weight: bold;
+                color: #b97a3a; }
+
+/*Centers the table with a size to take up 85%. Removes border spacing and adds extra space at the bottom. Adds a thin black solid border.*/ 
+table { width: 85%;
+        margin: auto; 
+        border-spacing: 0;
+        margin-bottom: 6em;
+        border: 3px solid black;}
+
+/*Table header text is larger and receives a light brown background color*/
+table th { font-size: 1.5em;
+           background-color: rgba(255, 223, 198, 0.75);}
+
+           /*larger table data cell text*/
+table td { font-size: 1.3em;}
+
+/*larger padding for header and data cells to space out rows*/
+table td, table th { padding: 0.7em;}
+
+/*brown background color for odd rows*/
+table tr:nth-of-type(odd) { background-color: #daa472;}
+
+/*light brown color for even rows*/
+table tr:nth-of-type(even) { background-color: rgba(255, 223, 198, 0.75); }
+
+/*query that will test if browser supports grid layout*/
+@supports ( display: grid) {
+     /*centers the form with an offwhite background color. Width set to 70% with extra padding for space.*/
+     form { 
+       margin: auto;
+       background-color: rgba(255, 223, 198, 0.8);
+       width: 70%; 
+       min-width: 10em;
+       padding: 1.5em; }
+     /*fieldset element within the form models the grid layout with 2 columns with 1em of space between them. Sets the border to black and adds extra padding for space*/
+     form fieldset { grid-template-columns: 6em 1fr;
+                     gap: 1em; 
+                     display: grid; 
+                     border: 1px solid black;
+                     padding: 1em; }
+     /*positions the submit button to the second column and sets the size of the buttom to 5em*/       
+     input[type="submit"] { grid-column: 2;
+                            width: 5em; }
+}
+
+/*media query for table display on a smartphone. Text will not be too big for small screens*/
+@media (max-width: 600px) {
+  table {
+    width: 95%;
+    font-size: 0.9em; }
+  table caption {
+    font-size: 1.1em; }
+  table th, table td {
+    padding: 0.5em; }
+}
