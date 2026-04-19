@@ -38,14 +38,20 @@ nav li { display: inline;
 nav a { text-decoration: none;
 }
 
-/*sets the background image for the Homepage. It is fixed for effect and covers the entire
-homepage section with no repeats.*/
-.hero { background-attachment: fixed;
-        background-image: url(images/homehero.jpg);
-        min-height: 90vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+/*Sets the homepage section's size to 90vh*/
+.hero {
+    min-height: 90vh;
+}
+/*Positions the video at the top left corner of the webpage that covers the entire homepage section.
+ z-index is at -1 so the video appears behind the text.*/
+.backgroundvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /*sets the background image for the Tutorial page. It is fixed for effect and covers the entire
