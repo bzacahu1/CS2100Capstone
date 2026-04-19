@@ -39,7 +39,7 @@ nav a { text-decoration: none;
 }
 
 /*Sets the homepage section's size to 90vh*/
-#hero {
+.hero {
     min-height: 90vh;
 }
 /*Positions the video at the top left corner of the webpage that covers the entire homepage section.
