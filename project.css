@@ -186,6 +186,38 @@ table tr:nth-of-type(odd) { background-color: #daa472;}
 /*light brown color for even rows*/
 table tr:nth-of-type(even) { background-color: rgba(255, 223, 198, 0.75); }
 
+#shop {
+  padding: 2em;
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  width: 300px;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgba(255, 223, 198, 0.4);
+}
+
+.product img {
+  width: 100%;
+  height: 275px;
+}
+
+.product h3 { padding-top: 1.6em;}
+
+#shop form { background-color: rgba(255, 223, 198, 0) }
+
+.product p { font-size: 1em; }
+
+form { width:auto; }
+
+form input[type="submit"] {   
+  font-size: 0.8em;       
+  font-weight: bold;
+  width: auto;
+}
+
 /*query that will test if browser supports grid layout*/
 @supports ( display: grid) {
      /*centers the form with an offwhite background color. Width set to 70% with extra padding for space.*/
