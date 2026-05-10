@@ -21,7 +21,7 @@ nav { position: fixed;
        font-size: large;
        font-weight: bold;
        width: 100%;
-       padding 0.8em;
+       padding: 0.8em;
 }
 
 /*removes the bullet points from the list. Sets the display to flex, centers the links, wraps the contents, and sets gap to 1.5em for spacing*/
