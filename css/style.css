@@ -16,7 +16,7 @@ background color that is translucent for better visibility.*/
 nav { position: fixed;
        top: 0;
        left: 0;
-       height: 3.5em;
+       height: auto;
        background-color: rgba(210, 157, 115, 0.67);
        font-size: large;
        font-weight: bold;
