@@ -37,12 +37,15 @@ nav ul {list-style-type: none;
 nav a { text-decoration: none;
 }
 
-/*Sets the homepage section's size to 90vh*/
+/*Sets the homepage section's size to 90vh and z-index to 1 for text to appear above the video*/
 .hero {
     min-height: 90vh;
+    position: relative;
+    z-index: 1;
 }
+
 /*Positions the video at the top left corner of the webpage that covers the entire homepage section.
- z-index is at -1 so the video appears behind the text. Background color set to light brown for fallback.*/
+ z-index is at 0 so the video appears behind the text. Background color set to light brown for fallback.*/
 #backgroundvideo {
     position: absolute;
     top: 0;
@@ -50,7 +53,7 @@ nav a { text-decoration: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
     background-color: rgba(210, 157, 115);
 }
 
@@ -270,4 +273,18 @@ form input[type="submit"] {
 /*media query so that the links in the nav bar arent too close to each other on bigger screens*/
 @media (min-width: 900px) {
   nav ul { gap: 7em}
+}
+
+/*Media query that helps run the website to display correctly in safari browsers*/
+@media (max-width: 800px) {
+  /*backround attachemnt set to scroll*/
+  #tutorialhero, #abouthero, #contacthero {
+    background-attachment: scroll;
+  }
+  /*set min-height to 90svh*/
+  .hero, #tutorialhero, #abouthero, #contacthero {
+    min-height: 100svh;
+  }
+  /*centers the links in the nav bar*/
+  nav ul { align-items: center; }
 }
