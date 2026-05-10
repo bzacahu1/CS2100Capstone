@@ -42,7 +42,7 @@ nav a { text-decoration: none;
     min-height: 90vh;
 }
 /*Positions the video at the top left corner of the webpage that covers the entire homepage section.
- z-index is at -1 so the video appears behind the text.*/
+ z-index is at -1 so the video appears behind the text. Background color set to light brown for fallback.*/
 #backgroundvideo {
     position: absolute;
     top: 0;
@@ -51,36 +51,40 @@ nav a { text-decoration: none;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    background-color: rgba(210, 157, 115);
 }
 
 /*sets the background image for the Tutorial page. It is fixed for effect and covers the entire
-tutorial section with no repeats.*/
+tutorial section with no repeats. Background color set to light brown for fallback.*/
 #tutorialhero { background-attachment: fixed;
                 background-image: url(../images/tutorialhero.jpg);
                 min-height: 90vh;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-color: rgba(210, 157, 115);
 }
 
 /*sets the background image for the About Me page. It is fixed for effect and covers the entire
-About Me section with no repeats.*/
+About Me section with no repeats. Background color set to light brown for fallback.*/
 #abouthero { background-attachment: fixed;
              background-image: url(../images/abouthero.jpg);
              min-height: 90vh;
              background-position: center;
              background-repeat: no-repeat;
              background-size: cover;
+             background-color: rgba(210, 157, 115);
 }
 
 /*sets the background image for the Contact page. It is fixed for effect and covers the entire
-Contact section with no repeats.*/
+Contact section with no repeats. Background color set to light brown for fallback.*/
 #contacthero { background-attachment: fixed;
                background-image: url(../images/contacthero.jpg);
                min-height: 90vh;
                background-position: center;
                background-repeat: no-repeat;
                background-size: cover;
+               background-color: rgba(210, 157, 115);
 }
 
 /*centers the text in the footer with style set to italics. Also sets the background to a brown color.*/
