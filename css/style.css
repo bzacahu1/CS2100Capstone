@@ -277,17 +277,3 @@ table tr:nth-of-type(even) { background-color: rgba(255, 223, 198, 0.75); }
 @media (min-width: 900px) {
   nav ul { gap: 7em}
 }
-
-/*Media query that helps run the website to display correctly in safari browsers*/
-@media (max-width: 800px) {
-  /*backround attachemnt set to scroll*/
-  #tutorialhero, #abouthero, #contacthero {
-    background-attachment: scroll;
-  }
-  /*set min-height to 90svh*/
-  .hero, #tutorialhero, #abouthero, #contacthero {
-    min-height: 100svh;
-  }
-  /*centers the links in the nav bar*/
-  nav ul { align-items: center; }
-}
