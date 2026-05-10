@@ -20,18 +20,17 @@ nav { position: fixed;
        background-color: rgba(210, 157, 115, 0.67);
        font-size: large;
        font-weight: bold;
-       width: 100%;
+       width: 100%
+       padding 0.8em;
 }
 
-/*removes the bullet points from the links list and center the links.*/
+/*removes the bullet points from the list. Sets the display to flex, centers the links, wraps the contents, and sets gap to 1.5em for spacing*/
 nav ul {list-style-type: none;
-        text-align: center;
-}
-
-/*Formats the links horizontally with enough space between them.*/
-nav li { display: inline;
-         padding-left: 3em;
-         padding-right: 3em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        margin: 0;
 }
 
 /*Removes the underline from the links*/
@@ -90,7 +89,7 @@ footer { text-align: center;
          background-color: rgba(210, 157, 115, 0.67);
 }
 
-/*Centers all the text in every "page". Also assings top padding so when the nav links are clicked the intended
+/*Centers all the text in every "page". Also assigns top padding so when the nav links are clicked the intended
 page to navigate to is displayed without the nav bar covering the top section of the content of the section*/
 #home, #tutorial, #about, #contact { text-align: center;
                                      padding-top: 5em;
@@ -174,7 +173,7 @@ table { width: 85%;
 table th { font-size: 1.5em;
            background-color: rgba(255, 223, 198, 0.75);}
 
-           /*larger table data cell text*/
+/*larger table data cell text*/
 table td { font-size: 1.3em;}
 
 /*larger padding for header and data cells to space out rows*/
@@ -186,11 +185,14 @@ table tr:nth-of-type(odd) { background-color: #daa472;}
 /*light brown color for even rows*/
 table tr:nth-of-type(even) { background-color: rgba(255, 223, 198, 0.75); }
 
+/*sets padding to 2 em and centers the text*/
 #shop {
   padding: 2em;
   text-align: center;
 }
 
+/*class for the product items. Sets the display to inline-block, 1 em margin and padding
+ with a cream background color. Width is fixed to 300px*/
 .product {
   display: inline-block;
   width: 300px;
@@ -199,19 +201,25 @@ table tr:nth-of-type(even) { background-color: rgba(255, 223, 198, 0.75); }
   background-color: rgba(255, 223, 198, 0.4);
 }
 
+/*Sets the product images to a set height of 275px and width to 100%*/
 .product img {
   width: 100%;
   height: 275px;
 }
 
+/*Sets the top padding for h3 headers un product class to 1.6em for spacing*/
 .product h3 { padding-top: 1.6em;}
 
+/*Sets the background color for the shop buttons to be completely transparent*/
 #shop form { background-color: rgba(255, 223, 198, 0) }
 
+/*Sets the text size for paragraph elemnts in product classes to 1em*/
 .product p { font-size: 1em; }
 
+/*Sets the width of the form element in the shop id to auto*/
 form { width:auto; }
 
+/*Sets text inside submit buttons to 0.8em and bolded. Buttons also have width set to auto*/
 form input[type="submit"] {   
   font-size: 0.8em;       
   font-weight: bold;
@@ -238,8 +246,12 @@ form input[type="submit"] {
                             width: 5em; }
 }
 
-/*media query for table display on a smartphone. Text will not be too big for small screens*/
+/*media query that allows for better view on smartphones. Text will not be too big and nav bar will have a stacked layout*/
 @media (max-width: 600px) {
+  p, li, dd {font-size: 1em;}
+  dt { font-size: 1.2em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.1em; }
   table {
     width: 95%;
     font-size: 0.9em; }
@@ -247,4 +259,11 @@ form input[type="submit"] {
     font-size: 1.1em; }
   table th, table td {
     padding: 0.5em; }
+  nav ul { flex-direction: column;
+    gap: 0.5em;}
+}
+
+/*media query so that the links in the nav bar arent too close to each other on bigger screens*/
+@media (min-width: 900px) {
+  nav ul { gap: 7em}
 }
