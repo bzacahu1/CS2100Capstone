@@ -41,6 +41,7 @@ nav a { text-decoration: none;
 /*Sets the homepage section's size to 90vh and z-index to 1 for text to appear above the video*/
 .hero {
     min-height: 90vh;
+    position: relative;
 }
 
 /*Sets the z-index of the text in the hero class so it appears above the video*/
