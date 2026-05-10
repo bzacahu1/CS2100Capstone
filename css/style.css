@@ -41,8 +41,12 @@ nav a { text-decoration: none;
 /*Sets the homepage section's size to 90vh and z-index to 1 for text to appear above the video*/
 .hero {
     min-height: 90vh;
-    position: relative;
-    z-index: 1;
+}
+
+/*Sets the z-index of the text in the hero class so it appears above the video*/
+.hero h1, .hero p { 
+  position: relative;
+  z-index: 1;
 }
 
 /*Positions the video at the top left corner of the webpage that covers the entire homepage section.
@@ -218,17 +222,15 @@ table tr:nth-of-type(even) { background-color: rgba(255, 223, 198, 0.75); }
 /*Sets the top padding for h3 headers un product class to 1.6em for spacing*/
 .product h3 { padding-top: 1.6em;}
 
-/*Sets the background color for the shop buttons to be completely transparent*/
-#shop form { background-color: rgba(255, 223, 198, 0) }
+/*Sets the background color for the shop buttons to be completely transparent and width set to auto.*/
+#shop form { background-color: rgba(255, 223, 198, 0);
+             width: auto;}
 
 /*Sets the text size for paragraph elemnts in product classes to 1em*/
 .product p { font-size: 1em; }
 
-/*Sets the width of the form element in the shop id to auto*/
-form { width:auto; }
-
 /*Sets text inside submit buttons to 0.8em and bolded. Buttons also have width set to auto*/
-form input[type="submit"] {   
+#shop input[type="submit"] {   
   font-size: 0.8em;       
   font-weight: bold;
   width: auto;
