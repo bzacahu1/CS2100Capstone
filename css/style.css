@@ -22,6 +22,7 @@ nav { position: fixed;
        font-weight: bold;
        width: 100%;
        padding: 0.8em;
+       z-index: 10;
 }
 
 /*removes the bullet points from the list. Sets the display to flex, centers the links, wraps the contents, and sets gap to 1.5em for spacing*/
@@ -47,7 +48,7 @@ nav a { text-decoration: none;
 /*Positions the video at the top left corner of the webpage that covers the entire homepage section.
  z-index is at 0 so the video appears behind the text. Background color set to light brown for fallback.*/
 #backgroundvideo {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
